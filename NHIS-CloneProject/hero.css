@@ -1,0 +1,7 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/visual_img01.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
