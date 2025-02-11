@@ -1,0 +1,123 @@
+.news {
+  width: 100vw;
+  height: 100vh;
+}
+
+.news__contents {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.news__top {
+  display: flex;
+}
+
+.news__top > .info-board {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.news__top > .info-board > h3 {
+  font-size: 30px;
+}
+
+.info-board > .menu {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  font-weight: bold;
+  width: 97%;
+}
+
+.info-board > .menu > ul {
+  display: flex;
+  gap: 20px;
+}
+
+.info-board > .menu > .more {
+  font-weight: 300;
+}
+
+.info-board > .menu > .more > i {
+  font-weight: 300;
+}
+
+.info-board > .news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  border: 1px solid #c6c6c6;
+  padding: 33px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.card {
+  width: 30%;
+  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/banner/20250117_banner_pc01.png");
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 10px;
+}
+
+.news__bottom {
+  display: flex;
+  gap: 30px;
+}
+
+.news__bottom > article {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50px 200px;
+
+  display: flex;
+  gap: 126px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.news__bottom > article > h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news__bottom > article > ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news__bottom > article > ul > li > a {
+  width: 90%;
+  background-color: white;
+
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  padding: 0 16px;
+
+  border-radius: 6px;
+}
+
+.news__bottom > .location {
+  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/bg_service1.png");
+  background-color: #f3f3f6;
+}
+
+.news__bottom > .help {
+  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/bg_service2.png");
+  background-color: #faeff0;
+}

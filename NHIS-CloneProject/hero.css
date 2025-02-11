@@ -5,3 +5,68 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.hero__contents {
+  width: 100%;
+  max-width: 1240px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+}
+
+.hero__contents > h2 {
+  font-size: 35px;
+  color: #515157;
+  font-weight: 500;
+
+  padding-top: 18%;
+}
+
+.hero__contents > h2 > span {
+  font-weight: bold;
+}
+
+.hero__service {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero__service > h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.service__menu {
+  display: flex;
+  padding: 20px 10px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service__menu > li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.service__menu > li > a > span {
+  text-align: center;
+}
+
+.service__menu > .more {
+  font-size: 13px;
+}
