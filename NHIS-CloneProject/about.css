@@ -1,0 +1,215 @@
+.about {
+  width: 100vw;
+  height: 100vh;
+}
+
+.about__contents {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+
+.about__contents > h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about__contents > figure {
+  display: flex;
+  border-radius: 10px;
+
+  width: 100%;
+  height: 241px;
+}
+
+.profile__img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+
+  background-color: #c6c6c6;
+  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/img_about.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  border-radius: 10px 0 0 10px;
+}
+
+.about__contents > figure > figcaption {
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #c6c6c6;
+  border-left: none;
+}
+
+.about__contents > figure > figcaption > a {
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.about__contents > figure > figcaption > a > h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about__contents > figure > figcaption > a > p {
+  font-size: 15px;
+  color: gray;
+}
+
+.about__contents > figure > figcaption > a > span {
+  text-align: right;
+  font-weight: bold;
+}
+
+.about__contents > .text__cardlist {
+  display: flex;
+  gap: 20px;
+}
+
+.about__contents > .text__cardlist > .textcard {
+  width: 25%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 23px;
+
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+}
+
+.about__contents > .text__cardlist > .textcard > h6 {
+  font-size: 18x;
+  font-weight: bold;
+}
+
+.about__contents > .text__cardlist > .textcard > p {
+  font-size: 15px;
+  height: 90px;
+}
+
+.about__contents > .text__cardlist > .textcard > span {
+  text-align: right;
+  font-weight: bold;
+}
+
+.about__contents > .list-slide {
+  display: flex;
+  width: 100%;
+}
+
+.about__contents > .list-slide > .img__cardlist {
+  display: flex;
+  gap: 30px;
+  width: auto;
+  padding-right: 24px;
+}
+
+.about__contents > .list-slide > .img__cardlist > .imgcard {
+  width: 33.3%;
+  border-radius: 10px 10px 0 0;
+}
+
+.about__contents
+  > .list-slide
+  > .img__cardlist
+  > .imgcard
+  > a
+  > .imgcard__album {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.about__contents
+  > .list-slide
+  > .img__cardlist
+  > .imgcard
+  > a
+  > .imgcard__album
+  > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.about__contents > .list-slide > .img__cardlist > .imgcard > a > .imgcard-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 25px;
+  border: 1px solid #c6c6c6;
+  border-radius: 0 0 10px 10px;
+}
+
+.about__contents
+  > .list-slide
+  > .img__cardlist
+  > .imgcard
+  > a
+  > .imgcard-text
+  > h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about__contents
+  > .list-slide
+  > .img__cardlist
+  > .imgcard
+  > a
+  > .imgcard-text
+  > p {
+  font-size: 15px;
+  height: 50px;
+}
+
+.about__contents
+  > .list-slide
+  > .img__cardlist
+  > .imgcard
+  > a
+  > .imgcard-text
+  > span {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.about__contents > .list-slide > .slide {
+  width: auto;
+  background-color: #feeee6;
+  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/bg_app.png");
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 30px 30px;
+
+  border-radius: 10px;
+}
+
+.about__contents > .list-slide > .slide > h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about__contents > .list-slide > .slide > .album {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about__contents > .list-slide > .slide > .album > img {
+  border-radius: 10px;
+}
