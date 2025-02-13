@@ -51,6 +51,7 @@
   border: none;
   border-radius: 20px;
 
+  font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -65,8 +66,14 @@
 
 .service__menu > li > a > span {
   text-align: center;
+  text-decoration: none;
 }
 
-.service__menu > .more {
+.service__menu > li > a:hover > span {
+  text-decoration: underline;
+  color: red;
+}
+
+.service__menu > a > .more {
   font-size: 13px;
 }

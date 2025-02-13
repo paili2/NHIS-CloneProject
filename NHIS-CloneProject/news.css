@@ -26,6 +26,7 @@
 
 .news__top > .info-board > h3 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .info-board > .menu {
@@ -42,8 +43,13 @@
   gap: 20px;
 }
 
+.info-board > .menu > ul > li {
+  cursor: pointer;
+}
+
 .info-board > .menu > .more {
   font-weight: 300;
+  font-size: 17px;
 }
 
 .info-board > .menu > .more > i {
@@ -61,14 +67,35 @@
   width: 90%;
 }
 
+.info-board > .news__list > li {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.info-board > .news__list > li > a:hover {
+  text-decoration: underline;
+}
+
 .card {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* .card {
   width: 30%;
   background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/banner/20250117_banner_pc01.png");
   background-size: cover;
   background-position: center;
 
   border-radius: 10px;
-}
+} */
 
 .news__bottom {
   display: flex;

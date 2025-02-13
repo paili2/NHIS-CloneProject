@@ -1,6 +1,5 @@
 .about {
   width: 100vw;
-  height: 100vh;
 }
 
 .about__contents {
@@ -11,7 +10,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-bottom: 100px;
 }
 
 .about__contents > h3 {
