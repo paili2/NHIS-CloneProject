@@ -58,13 +58,13 @@ footer {
 
   border-bottom: 1px solid #c6c6c6;
   padding-bottom: 30px;
+  margin-top: 40px;
 }
 
 .footer__main-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 40px;
 }
 
 .footer__main-snslink {
@@ -83,23 +83,23 @@ footer {
 }
 
 .footer__main-snslink > li > .naver {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/foot_ico_sns_blog.png");
+  background-image: url("img/foot_ico_sns_blog.png");
 }
 
 .footer__main-snslink > li > .facebook {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/foot_ico_sns_facebook.png");
+  background-image: url("img/foot_ico_sns_facebook.png");
 }
 
 .footer__main-snslink > li > .kakao {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/foot_ico_sns_kakao.png");
+  background-image: url("img/foot_ico_sns_kakao.png");
 }
 
 .footer__main-snslink > li > .youtube {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/foot_ico_sns_youtube.png");
+  background-image: url("img/foot_ico_sns_youtube.png");
 }
 
 .footer__main-snslink > li > .instagram {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/foot_ico_sns_Instagram.png");
+  background-image: url("img/foot_ico_sns_Instagram.png");
 }
 
 .policy {
@@ -124,21 +124,56 @@ footer {
 }
 
 .mark01 {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/mark_01.png");
+  background-image: url("img/mark_01.png");
   width: 63px;
 }
 
 .mark02 {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/mark_02.png");
+  background-image: url("img/mark_02.png");
   width: 43px;
 }
 
 .mark03 {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/_share/img/icon/mark02-img05.png");
+  background-image: url("img/mark02-img05.png");
   width: 57px;
 }
 
 .mark04 {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/common/mark_04.png");
+  background-image: url("img/mark_04.png");
   width: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 100px;
+  }
+
+  .footer__inner-contents {
+    max-width: 680px;
+  }
+
+  .footer__main-top {
+    margin-top: 30px;
+  }
+
+  .footer__main-info {
+    font-size: 14px;
+    gap: 10px;
+  }
+  .footer__main-top > div > a {
+    font-size: 14px;
+  }
+  .footer__main-snslink {
+    margin-top: 5px;
+    gap: 5px;
+  }
+
+  .policy {
+    gap: 17px;
+    font-size: 12px;
+    padding: 15px 0 0 0;
+  }
+  .marklist > a {
+    background-size: 80%;
+  }
 }

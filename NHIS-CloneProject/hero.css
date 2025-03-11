@@ -1,8 +1,13 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 .hero {
   width: 100vw;
-  height: 100vh;
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/visual_img01.jpg");
-  background-size: contain;
+  background-image: url("img/visual_img01.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -14,7 +19,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 250px;
+  gap: 150px;
 }
 
 .hero__contents > h2 {
@@ -32,7 +37,7 @@
 .hero__service {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .hero__service > h3 {
@@ -74,6 +79,32 @@
   color: red;
 }
 
-.service__menu > a > .more {
+.service__menu > li > a > .more {
   font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__contents {
+    max-width: 680px;
+  }
+
+  .hero__service > h3 {
+    font-size: 25px;
+  }
+
+  .service__menu {
+    display: initial;
+    padding: 30px 20px;
+  }
+  .service__menu > li {
+    width: 20%;
+    float: left;
+  }
+
+  .service__menu > .gap {
+    margin-bottom: 30px;
+  }
+  .service__menu > li > a > .more {
+    margin-top: 40px;
+  }
 }

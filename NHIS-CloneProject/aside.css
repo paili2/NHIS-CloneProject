@@ -11,3 +11,10 @@
 .chat > a > img {
   width: 40%;
 }
+
+@media screen and (max-width: 768px) {
+  .chat {
+    bottom: 35px;
+    right: -80px;
+  }
+}

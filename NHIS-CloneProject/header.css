@@ -22,22 +22,29 @@ header {
   position: relative;
 }
 
-.header__inner > .header__inner-text {
+.header__inner-contents {
+  width: 100vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header__inner > .header__inner-contents > .header__inner-text {
   font-size: 13px;
   font-weight: bold;
+  margin-left: 30px;
 }
 
 .header__inner-text::before {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
+  left: 99px;
   top: 50%;
   margin-top: -8px;
   width: 24px;
   height: 16px;
 
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/icon/top_ban_ico_flag.png");
+  background-image: url("img/top_ban_ico_flag.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: left center;
@@ -53,18 +60,19 @@ header {
 
 .header__site-controls > li > a {
   background-color: transparent;
-  padding: 0 3px;
+  padding: 2px 5px;
   border-radius: 6px;
+  transition: all 0.5s;
 }
 
 .header__site-controls > li > a:hover {
   cursor: pointer;
-  background-color: #d8d8d8;
+  background-color: #edf1f5;
 }
 
 .header__site-controls > li::after {
   content: "|";
-  color: #d8d8d8;
+  color: #edf1f5;
   margin-left: 10px;
 }
 
@@ -77,7 +85,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .header__topbar > .user-controls {
@@ -100,7 +108,51 @@ header {
   gap: 30px;
 }
 
+.header__menu > .menu-list > li {
+  cursor: pointer;
+}
+
+.header__menu > i {
+  cursor: pointer;
+}
+
 .header__line {
   border: 1px solid #edf1f5;
   margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 183px;
+  }
+  .header__contents {
+    max-width: 680px;
+    gap: 25px;
+    display: flex;
+  }
+
+  .header__inner-contents {
+    max-width: 680px;
+  }
+
+  .header__inner {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header__inner > .header__inner-contents > .header__inner-text {
+    font-size: 8px;
+    margin-left: 30px;
+  }
+
+  .header__inner-text::before {
+    left: 50px;
+    top: 64%;
+    width: 20px;
+    height: 12px;
+  }
+
+  .header__menu > .menu-list > li {
+    font-size: 13px;
+  }
 }

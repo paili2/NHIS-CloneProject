@@ -1,6 +1,5 @@
 .news {
   width: 100vw;
-  height: 100vh;
 }
 
 .news__contents {
@@ -15,6 +14,7 @@
 
 .news__top {
   display: flex;
+  align-items: flex-end;
 }
 
 .news__top > .info-board {
@@ -32,10 +32,13 @@
 .info-board > .menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   font-size: 20px;
   font-weight: bold;
-  width: 97%;
+  width: 95%;
+
+  padding: 0 7px 0 0;
 }
 
 .info-board > .menu > ul {
@@ -64,7 +67,7 @@
   border: 1px solid #c6c6c6;
   padding: 33px;
   border-radius: 10px;
-  width: 90%;
+  width: 95%;
 }
 
 .info-board > .news__list > li {
@@ -140,11 +143,49 @@
 }
 
 .news__bottom > .location {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/bg_service1.png");
+  background-image: url("img/bg_service1.png");
   background-color: #f3f3f6;
 }
 
 .news__bottom > .help {
-  background-image: url("https://www.nhis.or.kr/_res/nhis/nhis/img/newimg/main/bg_service2.png");
+  background-image: url("img/bg_service2.png");
   background-color: #faeff0;
+}
+
+@media screen and (max-width: 768px) {
+  .news__contents {
+    max-width: 680px;
+  }
+  .news__top > .info-board > h3 {
+    font-size: 25px;
+  }
+
+  .info-board > .menu > ul {
+    font-size: 17px;
+  }
+
+  .info-board > .menu > .more {
+    font-size: 13px;
+  }
+
+  .info-board > .news__list > li > a {
+    font-size: 11px;
+  }
+  .info-board > .news__list > li > time {
+    font-size: 10px;
+  }
+
+  .news__bottom {
+    display: unset;
+  }
+
+  .news__bottom > article {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .news__bottom > .location {
+    margin-bottom: 30px;
+    background-position: 30px 140px;
+  }
 }
